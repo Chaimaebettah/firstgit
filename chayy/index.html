@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="main-header">
+        <div class="burger-menu">
+            <div class="toggle">
+                <div class="toggleline"></div>
+                <div class="toggleline"></div>
+                <div class="toggleline"></div>
+            </div>
+        </div>
+        <div class="slide-out-left">
+            <h2 class="slide-out-title">title of the page </h2>
+            <input id="address" type="text" placeholder="Station Location">
+            <button id="submit">Filter</button>
+            <br>
+            <button data-bind="click: addMarkers">asdasd</button>
+            <ul data-bind="foreach:markers">
+                <li>
+                    <span data-bind="text: address"></span>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<section class="map-section">
+
+    <div id="map"></div>
+</section>
+<footer></footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIeBMwXgDtmiCPapLgQ7X7KsuaEXKXIk4"></script>
+<script src="jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="knockout-3.4.0.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+<!--key=AIzaSyAbaSAj-BaV8xczKdRX4VAWRSY53Eo1JdA-->
+</body>
+</html>
